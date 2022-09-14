@@ -8,7 +8,6 @@ const modalBackground = document.getElementById("modal-background");
 // variables
 let userText = "";
 let errorCount = 0;
-console.log(errorCount  )
 let startTime;
 let questionText = "";
 
