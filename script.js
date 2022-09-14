@@ -55,7 +55,6 @@ const typeController = (e) => {
 };
 
 const validate = (key) => {
-  console.log(key)
   if (key === questionText[userText.length - 1]) {
     return true;
   }
@@ -114,7 +113,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "none";
+      countdownOverlay.style.display = 'none';
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
@@ -135,5 +134,5 @@ setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
 
-  document.getElementById("show-time").innerHTML = `${startTime ? parseInt( timeSpent) : 0} seconds`;
+  // document.getElementById("show-time").innerHTML = `${startTime ? parseInt( timeSpent) : 0} seconds`;
 }, 1000);
